@@ -2,7 +2,7 @@
 
 ## Description
 
-Ce programme Python permet de créer une arborescence de fichiers et de la téléverser sur un dépôt GitHub. Il crée automatiquement dans la branche main l'arborescence de fichiers en utilisant os.makedirs.
+Ce programme Python permet de créer une arborescence de fichiers en utilisant mkdir.
 
 ## Prérequis
 
