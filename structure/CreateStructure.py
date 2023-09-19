@@ -8,16 +8,14 @@ class Structure:
     def __init__(self, project_root):
         self.project_root = project_root
 
-    def method_1(self):
-        os.makedirs(self.project_root, exist_ok=True)
-        os.makedirs(os.path.join(self.project_root, 'data', 'cleaned'), exist_ok=True)
-        os.makedirs(os.path.join(self.project_root, 'data', 'raw'), exist_ok=True)
-        os.makedirs(os.path.join(self.project_root, 'data', 'processed'), exist_ok=True)
-        os.makedirs(os.path.join(self.project_root, 'docs'), exist_ok=True)
-        os.makedirs(os.path.join(self.project_root, 'models'), exist_ok=True)
-        os.makedirs(os.path.join(self.project_root, 'notebooks'), exist_ok=True)
-        os.makedirs(os.path.join(self.project_root, 'reports'), exist_ok=True)
-        os.makedirs(os.path.join(self.project_root, 'src'), exist_ok=True)
+    def method_2(self):
+        Path(self.project_root+"/data/cleaned").mkdir(parents=True, exist_ok=True)
+        Path(self.project_root+"/data/raw").mkdir(parents=True, exist_ok=True)
+        Path(self.project_root+"/docs").mkdir(parents=True, exist_ok=True)
+        Path(self.project_root+"/models").mkdir(parents=True, exist_ok=True)
+        Path(self.project_root+"/notebooks").mkdir(parents=True, exist_ok=True)
+        Path(self.project_root+"/reports").mkdir(parents=True, exist_ok=True)
+        Path(self.project_root+"/src").mkdir(parents=True, exist_ok=True)
 
         self.edit_files()
     
