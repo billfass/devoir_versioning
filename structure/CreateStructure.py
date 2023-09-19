@@ -1,3 +1,6 @@
+# Bile Fassinou, Master 2 DIT promotion avril 23
+
+
 import os
 from pathlib import Path
 import shutil
@@ -30,7 +33,7 @@ class Structure:
             f.write("import numpy as np")
 
         with open(os.path.join(self.project_root, 'README.md'), 'w') as f:
-            f.write(readme)
+            f.write("hello world")
 
         with open(os.path.join(self.project_root, 'requirements.txt'), 'w') as f:
             f.write("# Liste des dépendances de votre projet\n\nPackage1==1.0\nPackage2==2.3.1\n")
