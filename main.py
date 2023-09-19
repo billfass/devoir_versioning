@@ -22,7 +22,7 @@ if __name__ == '__main__':
         branch_name = repository
         commit_message = f'commit pour la première branche dénommée {branch_name}'
         username = 'billfass'
-        token = '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'
+        token = 'votre_token'
 
         myGit = Gitinitiate.Gitinit(repo_path, repo_url, commit_message, branch_name, username, token)
         myGit.compute()
