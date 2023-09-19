@@ -1,3 +1,5 @@
+# Bile Fassinou, Master 2 DIT promotion avril 23
+
 from git import Repo
 
 class Gitinit:

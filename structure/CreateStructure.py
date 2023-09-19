@@ -1,3 +1,5 @@
+# Bile Fassinou, Master 2 DIT promotion avril 23
+
 import os
 from pathlib import Path
 import shutil
